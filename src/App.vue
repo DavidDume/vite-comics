@@ -11,7 +11,11 @@
 </script>
 
 <template>
-<Header></Header>
+
+  <div class="container">
+    <Header></Header>
+  </div>
+
 <Footer></Footer>
 </template>
 

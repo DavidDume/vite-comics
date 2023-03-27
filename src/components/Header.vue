@@ -1,7 +1,11 @@
 <template>
 
     <nav>
-        <ul>
+        <a href="#">
+            <img src="../assets/dc-logo.png" alt="#">
+        </a>
+        
+        <ul class="list">
             <li v-for="(link, i) in navLinks">
                 <a :href="link.href">{{ link.title }}</a>
             </li>
@@ -62,3 +66,31 @@ export default {
 }
 
 </script>
+
+
+<style scoped lang="scss">
+@use '../styles/variables';
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .list {
+            display: flex;
+            list-style: none;
+            li {
+                padding: 5px;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: variables.$primary;
+                    border-bottom: 3px solid variables.$primary;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+</style>
