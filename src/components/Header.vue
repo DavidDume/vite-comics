@@ -6,7 +6,7 @@
         </a>
         
         <ul class="list">
-            <li v-for="(link, i) in navLinks">
+            <li v-for="(link, i) in navLinks" class="nav-links">
                 <a :href="link.href">{{ link.title }}</a>
             </li>
         </ul>
@@ -78,7 +78,7 @@ export default {
         .list {
             display: flex;
             list-style: none;
-            li {
+            .nav-links {
                 padding: 5px;
             }
 
@@ -88,7 +88,7 @@ export default {
                 &:hover {
                     color: variables.$primary;
                     border-bottom: 3px solid variables.$primary;
-                    padding-bottom: 30px;
+                    padding-bottom: 40px;
                 }
             }
         }
