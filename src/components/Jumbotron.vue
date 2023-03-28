@@ -1,8 +1,21 @@
+<script>
 
+    export default {
+        name: "Jumbotron",
+        props: {
+            image: String,
+            title: String
+        }
+    }
+
+</script>
 
 <template>
     <main>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, inventore cum? In dignissimos totam dolorum quidem doloremque illo! Tenetur dolor saepe accusamus id, magni delectus hic libero non incidunt ipsum.</h1>
+        <div class="card">
+            <img :src="image" :alt="title">
+            <h3>{{ title }}</h3>
+        </div>
     </main>
 </template>
 
@@ -12,6 +25,12 @@
 main {
     color: white;
     padding: 40px 0;
+}
+
+.card {
+    & img {
+        width: 100%;
+    }
 }
 
 </style>
