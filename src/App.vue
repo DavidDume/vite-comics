@@ -28,10 +28,15 @@
     <Icons></Icons>
   </div>
 
-    
+  <div class="footer">
+    <div class="container">
+      <Footer></Footer>
+    </div>
+  </div>
+
   
 
-<Footer></Footer>
+
 </template>
 
 <style lang="scss">

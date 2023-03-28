@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ul>
+        <ul class="icons-list">
             <li v-for="icon in icons" class="icon-links">
                 <img :src="getImg(icon.path)" alt="">
                 <a href="#">{{ icon.name }}</a>
@@ -10,7 +10,7 @@
 </template>
 
 <styles scoped lang="scss">
-    ul {
+    .icons-list {
         list-style: none;
         display: flex;
         justify-content: center;
